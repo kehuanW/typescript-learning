@@ -1,12 +1,10 @@
 const Button = (
-    props: 
-    {backgroundColor: string, 
+    { backgroundColor, fontSize, pillShape }
+    : {backgroundColor: string, 
         fontSize: string, 
         pillShape: boolean,
     }
 ) => {
-    
-    const { backgroundColor, fontSize, pillShape } = props;
 
     return (
         <button 
