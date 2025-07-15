@@ -5,7 +5,11 @@ import Button from '@components/Button';
 function App() {
   return (
     <div className="App">
-      <Button />
+      <Button 
+        backgroundColor='red'
+        fontSize='16px'
+        pillShape={true}
+        />
     </div>
   );
 }
