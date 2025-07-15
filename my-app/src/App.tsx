@@ -8,7 +8,6 @@ function App() {
       <Button 
         backgroundColor='red'
         fontSize='16px'
-        pillShape={true}
         />
     </div>
   );
