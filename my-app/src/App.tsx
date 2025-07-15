@@ -9,6 +9,7 @@ function App() {
         backgroundColor='red'
         fontSize='16px'
         textColor='purple'
+        padding={[10, 20, 10, 20]}
         />
     </div>
   );

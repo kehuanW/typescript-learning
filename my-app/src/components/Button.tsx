@@ -5,6 +5,8 @@ type ButtonProps = {
         textColor: Color,
         fontSize: string, 
         pillShape?: boolean,
+        // padding: number[] //This is an array of numbers, without specifying the length
+        padding?: [number, number, number, number] //This is a tuple with two numbers
     }
 
 const Button = (
