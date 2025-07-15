@@ -10,12 +10,18 @@ type ButtonProps = {
     }
 
 const Button = (
-    { backgroundColor, fontSize, pillShape }
+    { backgroundColor, fontSize, pillShape, textColor, padding }
     : ButtonProps
 ) => {
 
     return (
         <button 
+            style={{
+                backgroundColor: backgroundColor,
+                color: textColor,
+                fontSize: fontSize,
+                padding: padding ? `${padding[0]}px ${padding[1]}px ${padding[2]}px ${padding[3]}px` : '10px 20px',
+            }}
             onClick={() => alert('Button clicked!')}>
             Click Me
         </button>
