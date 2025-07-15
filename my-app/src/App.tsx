@@ -8,6 +8,7 @@ function App() {
       <Button 
         backgroundColor='red'
         fontSize='16px'
+        textColor='purple'
         />
     </div>
   );

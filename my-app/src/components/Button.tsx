@@ -1,6 +1,8 @@
+type Color = "red" | "blue" | "green" | "yellow" | "purple" | "orange";
 
 type ButtonProps = {
-        backgroundColor: string, 
+        backgroundColor: Color, 
+        textColor: Color,
         fontSize: string, 
         pillShape?: boolean,
     }
