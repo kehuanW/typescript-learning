@@ -3,11 +3,11 @@ import './App.css';
 import Button from '@components/Button';
 
 function App() {
-  const handleClick = (num:number) => {console.log(`num=${num}`)}
-
+  const icon = <div>Hello there!</div>
+  
   return (
     <div className="App">
-      <Button handleClick={handleClick}/>
+      <Button children={icon}/>
     </div>
   );
 }

@@ -1,17 +1,16 @@
 import React from 'react';
 
 type ButtonProps = {
-    handleClick: (num:number)=>void
+    children: React.ReactNode;
 }
 
 const Button = (
-    { handleClick } : ButtonProps
+    { children } : ButtonProps
 ) => {
 
     return (
-        <button 
-            onClick={()=>handleClick(9)}>
-            Click Me
+        <button>
+            {children}
         </button>
     );
 }
