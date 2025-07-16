@@ -6,10 +6,13 @@ function App() {
   return (
     <div className="App">
       <Button 
-        backgroundColor='red'
-        fontSize='16px'
-        textColor='purple'
-        padding={[10, 20, 10, 20]}
+        style={{
+          backgroundColor:'red',
+          fontSize:'16px',
+          color:'purple',
+          padding:"1rem 2rem",
+          borderRadius: '8px',
+        }}
         />
     </div>
   );
