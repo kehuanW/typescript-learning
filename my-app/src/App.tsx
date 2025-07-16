@@ -3,16 +3,11 @@ import './App.css';
 import Button from '@components/Button';
 
 function App() {
+  const handleClick = (num:number) => {console.log(`num=${num}`)}
+
   return (
     <div className="App">
-      <Button 
-        borderRadius={{
-          topLeft: 10,
-          topRight: 10,
-          bottomLeft: 10,
-          bottomRight: 10
-        }}
-        />
+      <Button handleClick={handleClick}/>
     </div>
   );
 }
