@@ -1,16 +1,16 @@
 import React from 'react';
 
 type ButtonProps = {
-    style: React.CSSProperties;
-    }
+    borderRadius: Record<string, number>;
+}
 
 const Button = (
-    { style } : ButtonProps
+    { borderRadius } : ButtonProps
 ) => {
 
     return (
         <button 
-            style={style}
+            style={{borderRadius: `${borderRadius.topLeft}px ${borderRadius.topRight}px ${borderRadius.bottomRight}px ${borderRadius.bottomLeft}px`}}
             onClick={() => alert('Button clicked!')}>
             Click Me
         </button>

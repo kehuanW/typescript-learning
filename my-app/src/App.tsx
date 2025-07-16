@@ -6,12 +6,11 @@ function App() {
   return (
     <div className="App">
       <Button 
-        style={{
-          backgroundColor:'red',
-          fontSize:'16px',
-          color:'purple',
-          padding:"1rem 2rem",
-          borderRadius: '8px',
+        borderRadius={{
+          topLeft: 10,
+          topRight: 10,
+          bottomLeft: 10,
+          bottomRight: 10
         }}
         />
     </div>
