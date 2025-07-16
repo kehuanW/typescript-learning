@@ -1,15 +1,11 @@
 import React from 'react';
 
-type ButtonProps = {
-    setCount: React.Dispatch<React.SetStateAction<number>>
-}
-
 const Button = (
-    { setCount } : ButtonProps
+    {count = 0} //If there is a default value, no need to specify the type
 ) => {
-    
+
     return (
-        <button onClick={()=>setCount((pre)=>pre+1)}>
+        <button>
             Click me!
         </button>
     );

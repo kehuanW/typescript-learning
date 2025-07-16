@@ -4,11 +4,10 @@ import Button from '@components/Button';
 
 function App() {
   const [count, setCount] = useState(0)
-  console.log("count=", count)
   
   return (
     <div className="App">
-      <Button setCount={setCount}/>
+      <Button count={count}/>
     </div>
   );
 }
