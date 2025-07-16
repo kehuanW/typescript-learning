@@ -1,13 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Button from '@components/Button';
 
 function App() {
-  const icon = <div>Hello there!</div>
+  const [count, setCount] = useState(0)
+  console.log("count=", count)
   
   return (
     <div className="App">
-      <Button children={icon}/>
+      <Button setCount={setCount}/>
     </div>
   );
 }

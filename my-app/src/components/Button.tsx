@@ -1,16 +1,16 @@
 import React from 'react';
 
 type ButtonProps = {
-    children: React.ReactNode;
+    setCount: React.Dispatch<React.SetStateAction<number>>
 }
 
 const Button = (
-    { children } : ButtonProps
+    { setCount } : ButtonProps
 ) => {
-
+    
     return (
-        <button>
-            {children}
+        <button onClick={()=>setCount((pre)=>pre+1)}>
+            Click me!
         </button>
     );
 }
