@@ -1,14 +1,27 @@
 import React from 'react';
 
+// type ButtonProps = {
+//     type: "submit" | "button" | "reset",
+//     autoFocus: boolean
+// }
+
+type ButtonProps = React.ComponentPropsWithoutRef<'button'>
+
 const Button = (
-    {count = 0} //If there is a default value, no need to specify the type
+    {type, autoFocus, ...rest}:ButtonProps
 ) => {
 
-    return (
-        <button>
-            Click me!
-        </button>
-    );
+    // return (
+    //     <button type={type} autoFocus={autoFocus}>
+    //         Click me!
+    //     </button>
+    // );
+
+   return (
+       <button type={type} autoFocus={autoFocus} {...rest}>
+           Click me!
+       </button>
+   );
 }
 
 export default Button;

@@ -1,13 +1,13 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 import Button from '@components/Button';
 
 function App() {
-  const [count, setCount] = useState(0)
   
   return (
     <div className="App">
-      <Button count={count}/>
+      <Button type="submit" autoFocus={true} 
+      defaultValue="test" className='test'/>
     </div>
   );
 }
