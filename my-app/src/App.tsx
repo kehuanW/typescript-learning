@@ -6,8 +6,7 @@ function App() {
   
   return (
     <div className="App">
-      <Button type="submit" autoFocus={true} 
-      defaultValue="test" className='test'/>
+      <Button/>
     </div>
   );
 }

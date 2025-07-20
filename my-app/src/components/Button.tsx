@@ -1,14 +1,30 @@
 import React from 'react';
 
+// interface
+
+interface ButtonProps {
+    type: "button" | "submit" | "reset";
+    color: "red" | "blue" | "green"
+}
+
+interface SuperButtonProps extends ButtonProps {
+    size: "md" | "lg"
+}
+
+
+// type
+
 // type ButtonProps = {
-//     type: "submit" | "button" | "reset",
-//     autoFocus: boolean
+//     type: "button" | "submit" | "reset";
+//     color: "red" | "blue" | "green"
 // }
 
-type ButtonProps = React.ComponentPropsWithoutRef<'button'>
+// type SuperButtonProps = ButtonProps & {
+//     size: "md" | "lg"
+// }
 
 const Button = (
-    {type, autoFocus, ...rest}:ButtonProps
+    {}:ButtonProps
 ) => {
 
     // return (
@@ -18,7 +34,7 @@ const Button = (
     // );
 
    return (
-       <button type={type} autoFocus={autoFocus} {...rest}>
+       <button>
            Click me!
        </button>
    );
