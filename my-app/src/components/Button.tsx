@@ -1,12 +1,17 @@
 import React, { useEffect } from 'react';
 
-type buttonColor = 'primary' | 'secondary' | 'danger';
+// const convertToArray = <T,>(value:T): T[] => {
+//     return [value]
+// }
+
+function convertToArray<T>(value: T): T[] {
+    return [value];
+}
+
+convertToArray(1); // [1]
+convertToArray('hello'); // ['hello']
 
 const Button = () => {
-
-    useEffect(()=>{
-        const previousButtonColor = localStorage.getItem('buttonColor') as buttonColor;
-    },[])
 
    return (
        <button>
