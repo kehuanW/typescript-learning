@@ -1,20 +1,17 @@
 import React, { useRef } from 'react';
 
-const buttonTextOptions = [
-    'Click me!',
-    'Submit',
-    'Press here',
-    'Activate',
-    'Engage'
-] as const;
+type User = {
+    name: string;
+    sessionId: string;
+}
+
+type Guest = Omit<User, 'name'>; // Omit removes 'name' from User type
 
 const Button = () => {
 
    return (
        <button>
-           {buttonTextOptions.map((text, index) => {
-                return text
-            })}
+        Click me!
        </button>
    );
 }
