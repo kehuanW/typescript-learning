@@ -1,14 +1,12 @@
 import React from 'react';
+import { type Color } from '../lib';
 
 type ButtonProps<T> = {
-  countvalue: T;
-  countHistory: T[];
+  color?: Color;
 };
 
 
-const Button = <T,>(
-    { countvalue, countHistory }: ButtonProps<T>
-) => {
+const Button = () => {
 
    return (
        <button>
