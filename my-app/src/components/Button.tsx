@@ -1,17 +1,20 @@
 import React, { useRef } from 'react';
 
-type User = {
-    name: string;
-    age: string
-}
+const buttonTextOptions = [
+    'Click me!',
+    'Submit',
+    'Press here',
+    'Activate',
+    'Engage'
+] as const;
 
 const Button = () => {
 
-    const ref = useRef<HTMLButtonElement | null>(null)
-
    return (
-       <button ref={ref}>
-           Click me!
+       <button>
+           {buttonTextOptions.map((text, index) => {
+                return text
+            })}
        </button>
    );
 }
