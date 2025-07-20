@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 
 type User = {
     name: string;
@@ -6,15 +6,11 @@ type User = {
 }
 
 const Button = () => {
-    const [count, setCount] = useState<number>(0);
-    const [text, setText] = useState<string>("Click");
-    const [isPrimary, setIsPrimary] = useState<boolean>(true);
-    const [user, setUser] = useState<User | null>(null)
 
-    const name = user?.name;
+    const ref = useRef<HTMLButtonElement | null>(null)
 
    return (
-       <button>
+       <button ref={ref}>
            Click me!
        </button>
    );
