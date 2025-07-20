@@ -1,13 +1,12 @@
-import React, { useRef } from 'react';
+import React, { useEffect } from 'react';
 
-type User = {
-    name: string;
-    sessionId: string;
-}
-
-type Guest = Omit<User, 'name'>; // Omit removes 'name' from User type
+type buttonColor = 'primary' | 'secondary' | 'danger';
 
 const Button = () => {
+
+    useEffect(()=>{
+        const previousButtonColor = localStorage.getItem('buttonColor') as buttonColor;
+    },[])
 
    return (
        <button>
