@@ -6,7 +6,7 @@ function App() {
   
   return (
     <div className="App">
-      <Button/>
+      <Button countvalue={"0"} countHistory={["1", "2"]} />
     </div>
   );
 }

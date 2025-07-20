@@ -1,17 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-// const convertToArray = <T,>(value:T): T[] => {
-//     return [value]
-// }
+type ButtonProps<T> = {
+  countvalue: T;
+  countHistory: T[];
+};
 
-function convertToArray<T>(value: T): T[] {
-    return [value];
-}
 
-convertToArray(1); // [1]
-convertToArray('hello'); // ['hello']
-
-const Button = () => {
+const Button = <T,>(
+    { countvalue, countHistory }: ButtonProps<T>
+) => {
 
    return (
        <button>
