@@ -20,6 +20,24 @@ export default async function PostsPage() {
         }
       </ul>
 
+
+      <form className="max-w-[400px] mx-auto mt-24">
+        <input
+          type="text"
+          placeholder="Title"
+          className="border p-2 mb-2 w-full"
+        />
+        <textarea 
+          placeholder="Content"
+          className="border p-2 mb-2 w-full"
+        />
+        <button 
+          type="submit"
+          className="bg-blue-500 text-white px-3 py-1 rounded-md">
+          Create Post
+        </button>
+      </form>
+
     </div>
   );
 }
