@@ -2,8 +2,6 @@ export default async function PostsPage() {
   const response = await fetch("https://dummyjson.com/posts");
   const data = await response.json();
 
-  console.log(data)
-
   return (
     <div className="text-center pt-12">
       <h1 className="text-3xl capitalize font-bold mb-4">Posts</h1>
